@@ -1,4 +1,4 @@
-var realBackground,backgroundImage;
+var backGround,backgroundImage;
 var cat,catAnimation,catAnimationwalking;
 var mouse,mouseAnimation,mouseAnimationwalking;
 
@@ -15,9 +15,9 @@ function preload(){
 function setup() {
   createCanvas(600, 400);
   
-  realBackground = createSprite(280,200,15,15);
-  realBackground.addAnimation("background",backgroundImage)
-  realBackground.scale = 0.65;
+  backGround = createSprite(280,200,15,15);
+  backGround.addAnimation("background",backgroundImage)
+  backGround.scale = 0.65;
 
   cat = createSprite(510,360,15,15);
   cat.addAnimation("still", catAnimationwalking);
